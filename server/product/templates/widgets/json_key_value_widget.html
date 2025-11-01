@@ -1,0 +1,9 @@
+<div id="json-widget-{{ widget.name }}">
+    {% for pair in widget.pairs %}
+    	<div class="pair">
+            <input type="text" name="{{ widget.name }}_key" value="{{ pair.key }}" placeholder="attribute">
+            <input type="text" name="{{ widget.name }}_value" value="{{ pair.value }}" placeholder="value">
+        </div>
+    {% endfor %}
+    <button class="add-pair" type="button">ADD</button>
+</div>
